@@ -15,6 +15,7 @@ public class BookController{
         List<Book> books = new ArrayList<>();
         Book b1 = new Book(1,"三国演义","罗贯中");
         Book b2 = new Book(2,"红楼梦","曹雪芹");
+        b1.setId(1);
         books.add(b1);
         books.add(b2);
         ModelAndView mv = new ModelAndView();
