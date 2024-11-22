@@ -20,7 +20,28 @@
         </nav>
         <main>
             <h1><span th:text="${author}"></span>的网站架构并且是h1</h1>
-            <video src="ELDEN_RING_2024-03-14_20-05-25.mp4" controls width="400" height="400"></video>
+            <video controls width="400">
+                <source src="dark.mp4" type="video/mp4">
+                <track src="subtitle.vtt" kind="subtitles" srclang="zh-cn" label="中文" default>
+                
+            </video>
+            <div>
+                <figure>
+                    <iframe 
+                    src="//player.bilibili.com/player.html?isOutside=true&aid=112971883741800&bvid=BV1yVeGeHEdJ&cid=500001651758979&p=1&autoplay=0"
+                    scrolling="no" 
+                    border="0" 
+                    frameborder="no" 
+                    framespacing="0" 
+                    allowfullscreen="true"
+                    width="400"
+                    >
+                </iframe>
+                <figcaption>
+老冰
+                </figcaption>
+                </figure>
+            </div>
             <p th:text="${author}+'的网站架构'">网站架构</p>
             <article>屋里没别人才便宜呢,你这话是说我呢,不说你说谁呢,别让我说出好听的来,平儿这蹄子仔细
                 要降伏我,可仔细你的皮.
@@ -53,5 +74,23 @@
                 }
             </code>
         </pre>
+        <table style="border: 1px solid black;">
+            <caption>人员信息表</caption>
+            <tr>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>城市</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>20</td>
+                <td>北京</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>21</td>
+                <td>上海</td>
+            </tr>
+        </table>
     </body>
 </html>
