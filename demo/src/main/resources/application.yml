@@ -1,14 +1,22 @@
 spring:
-  datasource:  # 配置mysql
+  datasource:  # 配置 mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/mydb?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: 123456
   web:
     resources:
-      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/file/,classpath:/picture/,/_xhf/picture
+      static-locations:
+        - classpath:/META-INF/resources/
+        - classpath:/resources/
+        - classpath:/static/
+        - classpath:/public/
+        - classpath:/file/
+        - classpath:/picture/
+        - file:/_xhf/picture/  # 生产环境中的绝对路径
+
 server:
   port: 8080  # 默认端口
-  
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml 

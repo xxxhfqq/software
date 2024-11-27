@@ -1,0 +1,32 @@
+form{
+    margin:0 auto;
+    border:1px solid red;
+    width:300px;
+    border-radius: 10px;
+}
+form ul{
+    list-style:none;
+}
+form li{
+    margin:1em auto;
+}
+form label{
+    display: inline-block;
+    text-align: right;
+    width:90px;
+}
+form input{
+    width:90px;
+}
+form input:focus{
+    color:#000;
+}
+form button{
+    margin-left:90px;
+}
+.loadfile{
+    display: inline-block;
+    width:90px;
+    margin: 20px auto;
+    padding: 1em;
+}

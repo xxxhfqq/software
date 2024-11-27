@@ -1,0 +1,10 @@
+com\example\demo\App.class
+com\example\demo\HelloController.class
+com\example\demo\NoteController.class
+com\example\demo\FileUpload.class
+com\example\demo\TextController.class
+com\example\demo\uploadPicture.class
+com\example\demo\Json.class
+com\example\demo\BookController.class
+com\example\demo\Book.class
+com\example\demo\JsonController.class

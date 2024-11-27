@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="text.css">
+        <title>小试牛刀</title>
+        <link rel="icon" href="favicon1.ico">
+    </head>
+    <!-- <body>
+        <form action="\login" method="post">
+            <ul>
+                <li>
+                    <label for="userCount">账号</label>
+                    <input id="userCount" name="userCount" type="text">
+                </li>
+                <li>
+                    <label for="password">输入密码</label>
+                    <input id="password" name="password" type="password">
+                </li>
+                <li>
+                    <button type="submit">登录</button>
+                </li>
+            </ul>
+        </form> -->
+        <form action="\text" method="post" enctype="multipart/form-data">
+            <input class="loadfile" type="file" name="uploadfile">
+            <br>
+            <button type="submit">上传</button>
+        </form>
+    </body>
+
+</html>

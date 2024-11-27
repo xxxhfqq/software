@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh-cn">
+<head>
+    <title>title</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon1.ico">
+</head>
+<body>
+    <h1>Books List</h1>
+    <ul>
+        <li><strong>首页</strong></li>
+        <li><a href="note">note</a></li>
+        <li><a href="text">text</a></li>
+    </ul>
+    <ul>
+        <li th:each="book : ${books}">
+            <span th:text="${book.name}">Book Name</span> - 
+            <span th:text="${book.author}">Author</span>
+        </li>
+    </ul>
+    <h2 id="booklist">我喜欢的书</h2>
+        <ul>
+            <li>你好,未来</li>
+            <li>你好,过去</li>
+            <li>你好,现在</li>
+        </ul>
+    <h2>我讨厌的书</h2>
+        <ol>
+            <li><u>再见,未来</u></li>
+            <li><mark>再见,过去</mark></li>
+            <li>再见,现在</li>
+        </ol>
+    <p>
+        I like to write <strong><em>HTML</em></strong>
+    </p>
+    <p><input type="text"></p>
+    <p><a href="https://github.com/xxxhfqq/xxxhfqq.github.io/blob/main/docs/pictures/img1.jpg" target="_blank">github 库地址</a></p>
+    <figure>
+        <a href="https://github.com/xxxhfqq/xxxhfqq.github.io/blob/main/docs/pictures/img1.jpg" target="_blank" title="照片地址">
+            <img src=img1.jpg alt="tup" width="200" height="200" title="你好">
+        </a>
+        <figcaption>照片描述:这是一个打赏照片</figcaption>
+    </figure>
+
+    <p> <a href="#booklist">文档内链接</a></p>
+    <p><a href="nihao">nihao</a></p>
+</body>
+</html>
