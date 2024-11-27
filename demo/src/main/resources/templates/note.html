@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <title th:text="${author}+'的网站架构'">网站架构</title>
         <link rel="icon" href="favicon1.ico">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header style="text-align: center;font-size: large;">First web</header>
+        <header >First web</header>
         <hr>
         <nav>
             <ul>
                 <li><a href="books" target="_blank">首页</a></li>
                 <li><strong>note</strong></li>
+                <li><a href="text">text</a></li>
             </ul>
             <form>
                 <input type="search" name="q" placeholder="输入要搜索的内容">
@@ -92,5 +94,22 @@
                 <td>上海</td>
             </tr>
         </table>
+        <form action="/my-handle-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="userName" placeholder="Your name">
+                </li>
+                <li>
+                    <lable for="mail">E-mail:</lable>
+                    <input type="email" id="mail" name="userEmail">
+                </li>
+                <li>
+                    <lable for="msg">Message:</lable>
+                    <textarea id="msg" name="message"></textarea>
+                </li>
+            </ul>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>

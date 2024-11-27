@@ -10,13 +10,15 @@ public class Json {
     @JsonFormat(pattern = "yyyy_MM_dd")
     private Date date;
     private String name;
+    private String path;
     @JsonIgnore
     private String author;
 
-    public Json(int id, Date date, String name, String author){
+    public Json(int id, Date date, String name, String author, String path){
         this.id = id;
         this.date = date;
         this.name = name;
+        this.path = path;
         this.author = author;
     }
     public int getId(){
@@ -42,6 +44,12 @@ public class Json {
     }
     public void setAuthor(String author){
         this.author = author;
+    }
+    public String getPath(){
+        return path;
+    }
+    public void setPath(String path){
+        this.path = path;
     }
 
 }

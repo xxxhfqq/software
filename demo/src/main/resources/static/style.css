@@ -1,0 +1,33 @@
+header{
+    color:red;
+    text-align: center;
+    font-size: 50px;
+    width: 1000px;
+    border-bottom: 10px red solid;
+    border-top: 10px purple solid;
+    padding: 10px;
+    margin: 10px;
+    background-color: blue;
+    transform: rotate(0.5turn);
+    background-image: url('img1.jpg');
+}
+ul{
+    color:blue;
+    list-style-type: square;
+}
+a:link{
+    color:yellow;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    color:blue;
+}
+html{
+    background:red url('img1.jpg') repeat;
+}
+

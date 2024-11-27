@@ -12,7 +12,8 @@ public class JsonController {
     @GetMapping("/json")
     @ResponseBody
     public Json json(){
-        Json json = new Json(1,Date.valueOf("2020-02-02"),"Spring Boot","Author");
+        String path = System.getProperty("java.class.path");
+        Json json = new Json(1,Date.valueOf("2020-02-02"),"Spring Boot","Author",path);
         return json;
     }
 }
